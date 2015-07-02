@@ -1,5 +1,3 @@
-alert("catSim loaded. Click OK to start!")
-
 var start = prompt("You yawn and stretch as you wake from your nap. Do you want to PLAY, get some food to EAT, get PETS from your human, or get into TROUBLE?").toUpperCase();
 
 switch(start) {
@@ -87,4 +85,50 @@ switch(second) {
     break;
   default:
     alert("Try again, choosing LOAF, TRAP, LOOK, or TROUBLE!");
+}
+
+/////////////////////////////
+
+var third = prompt("So much time, so little to do. Do you want to PESTER your human, go find a TOY, find a SNACK, or get into TROUBLE?").toUpperCase();
+
+switch(third) {
+  case 'PESTER':
+    var glued = prompt("Is your human glued to a screen (YES or NO)?").toUpperCase();
+    var block = prompt("Can you physically block them?").toUpperCase();
+    if(glued === 'YES' && block === 'YES') {
+      alert("Be as cute as you can while you position yourself in the dead center of your human's way. Stay there as long as possible.");
+    } else {
+      alert("Meow as sadly as you can until they have to pay you attention.");
+    }
+    break;
+  case 'TOY':
+    var interest = prompt("Are any of the multitudes of expensive toys catching your interest (YES or NO)?").toUpperCase();
+    var notYours = prompt("Can you find anything of your human's that looks like fun?").toUpperCase();
+    if(interest === 'NO' && notYours === 'YES') {
+      alert("Remind your human why they can't have nice things. Tear it up!");
+    } else {
+      alert("Play around for about five minutes. Then spend an hour in a cardboard box, because that's much more entertaining.");
+    }
+    break;
+
+  case 'SNACK':
+    var hunger = prompt("Are you actually hungry (YES or NO)?").toUpperCase();
+    var fresh = prompt("Is the food in your bowl fresh?").toUpperCase();
+    if(hunger === 'YES' && fresh === 'YES') {
+      alert("Your human deserves a present, maybe you can leave one on their pillow (if you get around to it). Chow down!");
+    } else {
+      alert("Meow incessently until your human refills your bowl with fresh food. Eat approximately three pieces and walk away.");
+    }
+    break;
+  case 'TROUBLE':
+    var energy = prompt("Do you have too much energy (YES or NO)?").toUpperCase();
+    var busy = prompt("Is your human busy?").toUpperCase();
+    if(energy === 'NO' || busy === 'NO') {
+      alert("Curl up in your human's clean laundry and pre-apply fur.");
+    } else {
+      alert("Make loud noises in other rooms and act innocent and confused when your human investigates.");
+    }
+    break;
+  default:
+    alert("Try again, choosing PESTER, TOY, SNACK, or TROUBLE!");
 }
