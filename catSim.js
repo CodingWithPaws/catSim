@@ -1,3 +1,5 @@
+alert(catSim loaded. Click OK to start!)
+
 var start = prompt("You yawn and stretch as you wake from your nap. Do you want to PLAY, get some food to EAT, get PETS from your human, or get into TROUBLE?").toUpperCase();
 
 switch(start) {
